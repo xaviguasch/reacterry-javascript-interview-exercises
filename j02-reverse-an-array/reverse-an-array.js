@@ -7,10 +7,21 @@
 
 const reverseAnArray = (arr) => {
   if (arr.length === 0) {
-    return ''
+    return []
   }
 
-  return arr.reverse()
+  // SOLUTION WITH METHODS
+  // return arr.reverse()
+
+  // SOLUTION WITHOUT METHODS
+
+  const reversedArr = []
+
+  for (const el of arr) {
+    reversedArr.unshift(el)
+  }
+
+  return reversedArr
 }
 
 console.log(reverseAnArray([1, 2, 3, 4, 5]))
