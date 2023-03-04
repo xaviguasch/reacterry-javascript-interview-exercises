@@ -6,7 +6,11 @@
 // The input array will only contain strings and numbers
 
 const reverseAnArray = (arr) => {
-  return
+  if (arr.length === 0) {
+    return ''
+  }
+
+  return arr.reverse()
 }
 
 console.log(reverseAnArray([1, 2, 3, 4, 5]))
