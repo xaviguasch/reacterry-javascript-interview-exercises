@@ -7,9 +7,16 @@
 // The input array will contain only numbers
 
 const sumOfEvens = (arr) => {
-  return
+  return arr.reduce((acc, currV) => {
+    if (currV % 2 === 0) {
+      console.log(currV)
+      return acc + currV
+    } else {
+      return acc
+    }
+  }, 0)
 }
 
-console.log(sumOfEvens([1, 1, 1, 2, 2, 2, 3, 3, 3])) // 6
-console.log(sumOfEvens([])) // 0
-console.log(sumOfEvens([-5, 0, 5, -4, 1, 6, -3, 2, 7])) // 8
+// console.log(sumOfEvens([1, 1, 1, 2, 2, 2, 3, 3, 3])) // 6
+// console.log(sumOfEvens([])) // 0
+console.log(sumOfEvens([-5, 0, 5, -4, 1, 6, -3, 2, 7])) // 4
