@@ -8,10 +8,10 @@
 // Ensure that your function returns a new array instead of modifying the input arrays.
 
 const joinArrays = (arrOne, arrTwo) => {
-  // return [...arrOne, ...arrTwo]
+  return [...arrOne, ...arrTwo]
 
   // ALTERNATIVE SOLUTION: It creates a new array
-  return arrOne.concat(arrTwo)
+  // return arrOne.concat(arrTwo)
 }
 
 console.log(joinArrays([1, 2, 3], [4, 5, 6])) // Output: [1, 2, 3, 4, 5, 6]
