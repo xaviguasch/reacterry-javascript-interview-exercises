@@ -6,6 +6,10 @@
 // The string can consist of any alphanumeric characters
 
 const countVowels = (str) => {
+  if (!str) {
+    return 0
+  }
+
   const vowels = ['a', 'e', 'i', 'o', 'u']
   let count = 0
 
