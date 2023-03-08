@@ -6,7 +6,19 @@
 // The string can consist of any alphanumeric characters
 
 const countVowels = (str) => {
-  return
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  let count = 0
+
+  str
+    .toLowerCase()
+    .split('')
+    .forEach((letter) => {
+      if (vowels.includes(letter)) {
+        count++
+      }
+    })
+
+  return count
 }
 
 console.log(countVowels('Hello world!')) // 3
