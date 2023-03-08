@@ -27,4 +27,4 @@ const countVowels = (str) => {
 
 console.log(countVowels('Hello world!')) // 3
 console.log(countVowels('This is a test')) // 4
-console.log(countVowels('No vowels here')) // 0
+console.log(countVowels('No vowels here')) // 5
