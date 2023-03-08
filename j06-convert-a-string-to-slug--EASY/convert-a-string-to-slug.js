@@ -8,7 +8,11 @@
 // The input string will be a valid sentence
 
 const convertToSlug = (str) => {
-  return
+  if (!str) {
+    return ''
+  }
+
+  return str.toLowerCase().replaceAll(' ', '-')
 }
 
 console.log(convertToSlug('This is an example string')) // "this-is-an-example-string"
