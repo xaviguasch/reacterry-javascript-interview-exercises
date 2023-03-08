@@ -13,6 +13,16 @@ const convertToSlug = (str) => {
   }
 
   return str.toLowerCase().replaceAll(' ', '-')
+
+  // ALTERNATIVE SOLUTION
+  // if (str === '') {
+  //   return '';
+  // }
+
+  // const words = str.split(' ');
+  // const slug = words.join('-').toLowerCase();
+
+  // return slug;
 }
 
 console.log(convertToSlug('This is an example string')) // "this-is-an-example-string"
