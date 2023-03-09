@@ -6,7 +6,19 @@
 // Return null if no max number is found
 
 const findMax = (arr) => {
-  return
+  if (!arr || arr.length === 0) {
+    return null
+  }
+
+  let largestNum = arr[0]
+
+  for (const num of arr) {
+    if (num > largestNum) {
+      largestNum = num
+    }
+  }
+
+  return largestNum
 }
 
 console.log(findMax([4, 7, 2, 9, 1, 5])) // 9
