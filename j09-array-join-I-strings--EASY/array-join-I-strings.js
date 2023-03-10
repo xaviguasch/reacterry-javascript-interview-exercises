@@ -11,7 +11,7 @@
 const joinElementsWithUnderscore = (array) => {
   // Write your code here
 
-  return
+  return array.join('_')
 }
 
 const array = ['apple', 'banana', 'orange', 'grape']
