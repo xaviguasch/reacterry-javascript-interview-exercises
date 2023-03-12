@@ -6,7 +6,7 @@
 // If the input string is empty, then return an empty string
 
 const reverseAString = (str) => {
-  return
+  return str.split('').reverse().join('')
 }
 
 console.log(reverseAString('hello')) // 'olleh'
