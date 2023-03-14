@@ -5,7 +5,7 @@
 // If no elements in the input array are less than 5, return an empty array.
 
 const getLessThanFive = (numbers) => {
-  return
+  return numbers.filter((num) => num < 5)
 }
 
 console.log(getLessThanFive([2, 6, 3, 7, 1, 9, 4]))
