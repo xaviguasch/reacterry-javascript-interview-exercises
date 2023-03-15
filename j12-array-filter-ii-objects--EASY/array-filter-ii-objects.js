@@ -7,7 +7,7 @@
 // If no adult users are found, return an empty array.
 
 const getAdultUsers = (users) => {
-  return
+  return users.filter((user) => user.age >= 18)
 }
 
 const users = [
