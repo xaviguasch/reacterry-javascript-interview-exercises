@@ -7,7 +7,7 @@
 // If the input array names is empty, then return an empty array.
 
 const mapToUppercase = (names) => {
-  return
+  return names.map((name) => name.toUpperCase())
 }
 
 const names1 = ['john', 'mary', 'bob', 'jane']
