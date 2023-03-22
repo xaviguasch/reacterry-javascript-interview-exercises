@@ -9,7 +9,9 @@
 // The original input array should not be modified.
 
 const removeFalsy = (arr) => {
-  return
+  return arr.filter((value) => value)
+  // ALTERNATIVE SOLUTION
+  // return arr.filter(Boolean)
 }
 
 const arr = [0, 1, false, 2, '', 3]
