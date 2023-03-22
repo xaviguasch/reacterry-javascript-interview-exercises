@@ -17,6 +17,10 @@ const getInitials = (user) => {
   initials += lastName[0].toUpperCase() + '.'
 
   return initials
+
+  // ALTERNATIVE SOLUTION
+  //   const names = [user.firstName, user.middleName, user.lastName].filter(name => name); // filters out undefined middleName
+  //   return names.map(name => name.charAt(0)).join('. ') + '.';
 }
 
 console.log(getInitials({ firstName: 'John', middleName: 'A', lastName: 'Doe' }))
