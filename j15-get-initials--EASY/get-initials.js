@@ -6,8 +6,18 @@
 // You can assume that the input object will always have firstName and lastName
 
 const getInitials = (user) => {
-  return
+  const { firstName, middleName, lastName } = user
+
+  let initials = firstName[0].toUpperCase() + '. '
+
+  if (middleName) {
+    initials += middleName[0].toUpperCase() + '. '
+  }
+
+  initials += lastName[0].toUpperCase() + '.'
+
+  return initials
 }
 
-console.log(sumNumbers({ firstName: 'John', middleName: 'A', lastName: 'Doe' }))
-console.log(sumNumbers({ firstName: 'Jane', lastName: 'Doe' }))
+console.log(getInitials({ firstName: 'John', middleName: 'A', lastName: 'Doe' }))
+console.log(getInitials({ firstName: 'Jane', lastName: 'Doe' }))
