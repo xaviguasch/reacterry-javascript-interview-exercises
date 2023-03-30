@@ -5,7 +5,17 @@
 // If the input array is empty, return an empty array.
 
 const reverseArray = (array) => {
-  return
+  // via method
+  // return array.reverse()
+
+  //  via loop
+  const reversedArr = []
+
+  for (let i = array.length - 1; i >= 0; i--) {
+    reversedArr.push(array[i])
+  }
+
+  return reversedArr
 }
 
 console.log(reverseArray([1, 2, 3, 4]))
