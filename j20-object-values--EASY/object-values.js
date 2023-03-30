@@ -5,7 +5,7 @@
 // If the object has no values, return an empty array.
 
 const getValues = (object) => {
-  return
+  return Object.values(object)
 }
 
 console.log(getValues({ foo: 1, bar: 2, baz: 3 }))
