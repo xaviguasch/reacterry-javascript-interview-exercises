@@ -5,8 +5,8 @@
 
 const remove = (array) => {
   // Write your code here
-
-  return
+  array.pop()
+  return array
 }
 
 console.log(remove([1, 2, 3]))
