@@ -6,7 +6,7 @@
 // If there are special characters like ! or ., then treat them like words, unless they are adjacent to an existing word like hurray!, in that case, assume that ! is part of the word.
 
 const splitSentence = (sentence) => {
-  return
+  return sentence.split(' ')
 }
 
 console.log(splitSentence('The quick brown fox'))
