@@ -5,7 +5,7 @@
 // If no element is found, return -1.
 
 const findIndexOf = (string, substring) => {
-  return
+  return string.indexOf(substring)
 }
 
 console.log(findIndexOf('hello world', 'world'))
