@@ -6,9 +6,20 @@
 // Remember to account for \n and \t.
 
 const removeWhitespaces = (string) => {
-  return
+  // using REGEX
+  // return string.replace(/\s/g, '')
+
+  let result = ''
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] !== ' ' && string[i] !== '\t' && string[i] !== '\n') {
+      result += string[i]
+    }
+  }
+
+  return result
 }
 
-console.log('Hello,   World!')
-console.log('  This is a sentence.\nIt contains some whitespace.  ')
-console.log('\t  \n\n')
+console.log(removeWhitespaces('Hello,   World!'))
+console.log(removeWhitespaces('  This is a sentence.\nIt contains some whitespace.  '))
+console.log(removeWhitespaces('\t  \n\n'))
