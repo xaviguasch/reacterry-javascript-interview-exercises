@@ -3,7 +3,8 @@
 
 const addFromBeginning = (array, value) => {
   // Write your code here
-  return
+  array.unshift(value)
+  return array
 }
 
 console.log(addFromBeginning([1, 2, 3], 0))
