@@ -3,6 +3,8 @@
 
 const containsSubstring = (string, substring) => {
   // Write your code here
+
+  return string.includes(substring)
 }
 
 console.log(containsSubstring('Hello, world!', 'world'))
