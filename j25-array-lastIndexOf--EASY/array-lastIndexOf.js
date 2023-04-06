@@ -7,8 +7,8 @@
 const findLastIndexOf = (array, value) => {
   // Write your code here
 
-  return
+  return array.lastIndexOf(value)
 }
 
-console.log(findIndexOf([1, 2, 3, 2], 2))
-console.log(findIndexOf(['foo', 'bar', 'baz', 'bar'], 'baz'))
+console.log(findLastIndexOf([1, 2, 3, 2], 2))
+console.log(findLastIndexOf(['foo', 'bar', 'baz', 'bar'], 'baz'))
