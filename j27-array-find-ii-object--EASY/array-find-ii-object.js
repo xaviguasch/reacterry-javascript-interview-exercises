@@ -7,6 +7,8 @@
 
 const getAnAdult = (users) => {
   // Write your code here
+
+  return users.find((u) => u.age >= 18) || null
 }
 
 const users = [
