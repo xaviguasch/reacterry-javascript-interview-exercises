@@ -5,7 +5,7 @@
 // If the object has no keys, return an empty array.
 
 const getKeys = (object) => {
-  return
+  return Object.keys(object)
 }
 
 const object = { foo: 1, bar: 2, baz: 3 }
