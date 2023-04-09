@@ -5,11 +5,11 @@
 // The function should remove vowels in both lowercase and UPPERCASE.
 
 const removeVowels = (str) => {
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  const vowels = ['a', 'e', 'i', 'o', 'u']
 
   return str
     .split('')
-    .filter((char) => !vowels.includes(char))
+    .filter((char) => !vowels.includes(char.toLowerCase()))
     .join('')
 }
 
