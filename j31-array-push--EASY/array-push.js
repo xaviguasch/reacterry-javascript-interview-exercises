@@ -3,6 +3,8 @@
 
 const append = (array, value) => {
   // Write your code here
+  array.push(value)
+  return array
 }
 
 console.log(append([1, 2, 3], 4))
