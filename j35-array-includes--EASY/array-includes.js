@@ -7,6 +7,7 @@
 
 const isInArray = (array, value) => {
   // Write your code here
+  return array.includes(value)
 }
 
 const fruits = ['apple', 'banana', 'orange']
