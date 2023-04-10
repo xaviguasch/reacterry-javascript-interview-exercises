@@ -5,7 +5,7 @@
 // If no element is found, return -1.
 
 const findIndexOf = (array, value) => {
-  return
+  return array.indexOf(value)
 }
 
 console.log(findIndexOf([1, 2, 3], 2))
