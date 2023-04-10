@@ -6,6 +6,7 @@
 
 const findLastIndexOf = (string, substring) => {
   // Write your code here
+  return string.lastIndexOf(substring)
 }
 
 console.log(findLastIndexOf('hello world', 'o'))
