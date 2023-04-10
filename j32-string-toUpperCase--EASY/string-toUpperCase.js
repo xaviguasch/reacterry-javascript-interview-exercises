@@ -6,6 +6,7 @@
 
 const getUpperCase = (word) => {
   // Write your code here
+  return word.toUpperCase()
 }
 
 console.log(getUpperCase('hello'))
