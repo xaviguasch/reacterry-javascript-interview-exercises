@@ -5,7 +5,7 @@
 // If the input array is empty, return false.
 
 const validateObject = (users) => {
-  return
+  return users.every((user) => user?.firstName)
 }
 
 const users1 = [
@@ -14,5 +14,6 @@ const users1 = [
 ]
 
 console.log(validateObject(users1)) // Output: true
+
 const users2 = [{ firstName: 'John', lastName: 'Doe' }, { lastName: 'Doe' }]
-console.log(validateObject(users2))
+console.log(validateObject(users2)) // Output: false
