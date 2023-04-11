@@ -6,9 +6,9 @@
 // Assume that all elements in the array are strings.
 
 const getLongerThanFour = (array) => {
-  return
+  return array.find((str) => str.length > 4) || null
 }
 
 console.log(getLongerThanFour(['hello', 'world', 'foo'])) // Output: 'hello'
-console.log(getLongerThanFour(['a', 'ab', 'abc', 'abcd'])) // Output: 'abc'
+console.log(getLongerThanFour(['a', 'ab', 'abc', 'abcd'])) // Output: null
 console.log(getLongerThanFour(['a', 'ab', 'abc', 'abcd'])) // Output: null
