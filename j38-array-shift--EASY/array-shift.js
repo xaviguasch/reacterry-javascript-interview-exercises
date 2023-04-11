@@ -3,6 +3,9 @@
 
 const removeFromBeginning = (array) => {
   // Write your code here
+  array.shift()
+
+  return array
 }
 
 console.log(removeFromBeginning([1, 2, 3]))
