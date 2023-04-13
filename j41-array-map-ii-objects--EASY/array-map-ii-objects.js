@@ -8,6 +8,7 @@
 
 const getAges = (users) => {
   // Write your code here
+  return users.map((user) => user.age)
 }
 
 const users = [
