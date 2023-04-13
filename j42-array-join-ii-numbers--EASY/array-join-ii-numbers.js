@@ -6,7 +6,7 @@
 // The input array will contain only numbers
 
 const joinWithCommas = (array) => {
-  return
+  return array.join(',')
 }
 
 console.log(joinWithCommas([1, 2, 3, 4, 5, 6]))
