@@ -6,6 +6,7 @@
 
 const reverseSentence = (sentence) => {
   // Write your code here
+  return sentence.split(' ').reverse().join(' ')
 }
 
 console.log(reverseSentence('hello world')) // Output: 'world hello'
