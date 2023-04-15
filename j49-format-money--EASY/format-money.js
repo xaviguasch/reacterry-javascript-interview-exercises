@@ -5,6 +5,15 @@
 
 const formatMoney = (amount) => {
   // Write code here
+  // return `$ ${amount.toFixed(2)}`
+
+  return (
+    '$ ' +
+    amount.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
+  )
 }
 
 console.log(formatMoney(123)) // Output: $123.00
