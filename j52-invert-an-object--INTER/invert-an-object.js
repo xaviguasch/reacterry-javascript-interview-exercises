@@ -8,7 +8,15 @@
 // The function should handle objects with any number of key-value pairs
 
 const invertObject = (obj) => {
-  return
+  const invObj = {}
+
+  const entries = Object.entries(obj)
+
+  for (const pair of entries) {
+    invObj[pair[1]] = pair[0]
+  }
+
+  return invObj
 }
 
 const originalObj = {
