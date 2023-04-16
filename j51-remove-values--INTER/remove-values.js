@@ -10,9 +10,21 @@
 
 const removeValues = (arr1, arr2) => {
   // Write your code here
+
+  return arr1.filter((el) => !arr2.includes(el))
 }
 
-const arr1 = [1, 2, 3, 4, 5]
-const arr2 = [3, 4, 6]
+// const arr1 = [1, 2, 3, 4, 5]
+// const arr2 = [3, 4, 6]
+// const remaining = removeValues(arr1, arr2)
+// console.log(remaining) // [1, 2, 5]
+
+// const arr1 = [1, 2, 3]
+// const arr2 = [1, 2, 3]
+// const remaining = removeValues(arr1, arr2)
+// console.log(remaining) // []
+
+const arr1 = [1, 2, 2, 3, 4, 4, 5]
+const arr2 = [2, 4]
 const remaining = removeValues(arr1, arr2)
-console.log(remaining) // [1, 2, 5]
+console.log(remaining) // [1, 3, 5]
