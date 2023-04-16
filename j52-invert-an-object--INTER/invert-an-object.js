@@ -27,3 +27,13 @@ const originalObj = {
 
 const invertedObj = invertObject(originalObj)
 console.log(invertedObj) // Output: { John: 'name', '30': 'age', 'New York': 'city' }
+
+// ALTERNATIVE SOLUTION
+
+//  const invertObject = (obj) => {
+//   const inverted = {};
+//   for (const key in obj) {
+//     inverted[obj[key]] = key;
+//   }
+//   return inverted;
+// };
