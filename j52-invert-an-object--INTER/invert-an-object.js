@@ -19,6 +19,15 @@ const invertObject = (obj) => {
   return invObj
 }
 
+// ALTERNATIVE SOLUTION
+// const invertObject = (obj) => {
+//   const inverted = {}
+//   for (const key in obj) {
+//     inverted[obj[key]] = key
+//   }
+//   return inverted
+// }
+
 const originalObj = {
   name: 'John',
   age: 30,
@@ -27,13 +36,3 @@ const originalObj = {
 
 const invertedObj = invertObject(originalObj)
 console.log(invertedObj) // Output: { John: 'name', '30': 'age', 'New York': 'city' }
-
-// ALTERNATIVE SOLUTION
-
-//  const invertObject = (obj) => {
-//   const inverted = {};
-//   for (const key in obj) {
-//     inverted[obj[key]] = key;
-//   }
-//   return inverted;
-// };
