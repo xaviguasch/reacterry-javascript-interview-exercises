@@ -6,9 +6,10 @@
 
 const sortStrings = (array) => {
   // Write your code here
+  return array.map((word) => word.split('').sort().join(''))
 }
 
-console.log(objesortStrings(['apple', 'banana', 'pear', 'banana', 'orange', 'apple']))
+console.log(sortStrings(['apple', 'banana', 'pear', 'banana', 'orange', 'apple']))
 // Output: ['aelpp', 'aaabnn', 'aepr', 'aaabnn', 'aegnor', 'aelpp']
 console.log(sortStrings(['Orange', 'apple', 'Banana', 'pear']))
 // Output: ['aegnor', 'aelpp', 'aaabnn', 'aepr']
