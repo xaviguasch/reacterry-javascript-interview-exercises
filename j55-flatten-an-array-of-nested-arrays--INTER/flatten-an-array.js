@@ -13,6 +13,7 @@
 
 const flatten = (arr) => {
   // Write your code here
+  return arr.flat(Infinity)
 }
 
 console.log(flatten([[1, 2, [3]], 4]))
