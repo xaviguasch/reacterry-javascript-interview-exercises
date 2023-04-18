@@ -7,6 +7,32 @@
 
 const maxCharacters = (str) => {
   // Write your code here
+
+  if (str === '') {
+    return null
+  }
+
+  const hashObj = {}
+
+  let maxChar = ''
+  let maxNum = 0
+
+  str.split('').forEach((char) => {
+    if (hashObj[char]) {
+      hashObj[char] += 1
+    } else {
+      hashObj[char] = 1
+    }
+  })
+
+  for (const key in hashObj) {
+    if (hashObj[key] > maxNum) {
+      maxNum = hashObj[key]
+      maxChar = key
+    }
+  }
+
+  return maxChar
 }
 
 console.log(maxCharacters('hello'))
