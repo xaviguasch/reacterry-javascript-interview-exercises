@@ -7,10 +7,34 @@
 
 const firstCharacter = (str) => {
   // Write your code here
+
+  const hashObj = {}
+
+  const strArr = str.split('')
+  let uniqueChar = null
+
+  strArr.map((char) => {
+    if (hashObj[char]) {
+      hashObj[char] += 1
+    } else {
+      hashObj[char] = 1
+    }
+  })
+
+  strArr.forEach((char) => {})
+
+  for (let i = 0; i < strArr.length; i++) {
+    if (hashObj[strArr[i]] === 1) {
+      uniqueChar = strArr[i]
+      break
+    }
+  }
+
+  return uniqueChar
 }
 
 console.log(firstCharacter('hello')) // "h"
 console.log(firstCharacter('dad')) // "a"
-console.log(firstCharacter('racecar')) // null
+console.log(firstCharacter('racecar')) // 'e'
 console.log(firstCharacter('aabbcc')) // null
 console.log(firstCharacter('')) // null
