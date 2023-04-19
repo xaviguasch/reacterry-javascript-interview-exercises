@@ -11,7 +11,6 @@ const firstCharacter = (str) => {
   const hashObj = {}
 
   const strArr = str.split('')
-  let uniqueChar = null
 
   strArr.map((char) => {
     if (hashObj[char]) {
@@ -21,16 +20,14 @@ const firstCharacter = (str) => {
     }
   })
 
-  strArr.forEach((char) => {})
-
   for (let i = 0; i < strArr.length; i++) {
     if (hashObj[strArr[i]] === 1) {
-      uniqueChar = strArr[i]
-      break
+      const uniqueChar = strArr[i]
+      return uniqueChar
     }
   }
 
-  return uniqueChar
+  return null
 }
 
 console.log(firstCharacter('hello')) // "h"
