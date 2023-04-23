@@ -9,6 +9,18 @@
 
 const frequencyCounter = (arr) => {
   // Write your code here
+
+  const hashCounterObj = {}
+
+  for (const el of arr) {
+    if (hashCounterObj[el]) {
+      hashCounterObj[el] += 1
+    } else {
+      hashCounterObj[el] = 1
+    }
+  }
+
+  return hashCounterObj
 }
 
 const arr = [1, 2, 3, 1, 2, 1, 4, 5, 6, 5]
