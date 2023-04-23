@@ -7,6 +7,19 @@
 
 const findLongest = (array) => {
   // Write your code here
+  if (array.length === 0) {
+    return ''
+  }
+
+  let longestStr = ''
+
+  array.forEach((string) => {
+    if (string.length > longestStr.length) {
+      longestStr = string
+    }
+  })
+
+  return longestStr
 }
 
 console.log(findLongest(['cat', 'dog', 'elephant'])) // Output: 'elephant'
