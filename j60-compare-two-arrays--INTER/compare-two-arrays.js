@@ -8,7 +8,11 @@
 // The input arrays can contain only booleans, strings, and numbers.
 
 const areArraysEqual = (arr1, arr2) => {
-  // Write your code here
+  if (arr1.length !== arr2.length) return false
+
+  return arr1.every((el, idx) => {
+    return el === arr2[idx]
+  })
 }
 
 console.log(areArraysEqual([1, 2, 3], [1, 2, 3])) // true
