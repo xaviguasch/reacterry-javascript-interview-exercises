@@ -7,7 +7,12 @@
 // The input will always be a valid sentence.
 
 const capitaliseAllWords = (input) => {
-  // Write your code here
+  if (!input) return ''
+
+  return input
+    .split(' ')
+    .map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ')
 }
 
 console.log(capitaliseAllWords('hello world! 123')) // Output: "Hello World! 123"
