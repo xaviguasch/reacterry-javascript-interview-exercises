@@ -7,6 +7,11 @@
 
 const sumNumbers = (str) => {
   // Write your code here
+  if (!str) return 0
+
+  const numsArr = str.split(',').map((e) => Number(e))
+
+  return numsArr.reduce((acc, currV) => acc + currV, 0)
 }
 
 console.log(sumNumbers('')) // Output: 0
