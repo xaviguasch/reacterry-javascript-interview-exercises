@@ -6,6 +6,9 @@
 
 const getStringsWithVowels = (array) => {
   // Write your code here
+  const vocals = ['a', 'e', 'i', 'o', 'u']
+
+  return array.filter((str) => vocals.includes(str[0].toLowerCase()))
 }
 
 console.log(getStringsWithVowels(['apple', 'banana', 'orange', 'pear'])) // Output: ['apple', 'orange']
