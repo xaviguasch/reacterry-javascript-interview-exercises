@@ -8,6 +8,14 @@
 
 const areAnagrams = (strOne, strTwo) => {
   // Write your code here
+  if (strOne.length !== strTwo.length) {
+    return false
+  }
+
+  const wordOneOrdered = strOne.toLowerCase().split('').sort().join('')
+  const wordTwoOrdered = strTwo.toLowerCase().split('').sort().join('')
+
+  return wordOneOrdered === wordTwoOrdered
 }
 
 console.log(areAnagrams('cinema', 'iceman'))
