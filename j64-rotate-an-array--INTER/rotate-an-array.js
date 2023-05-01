@@ -7,13 +7,11 @@
 // If n is greater than the length of the array, the elements should be rotated more than once.
 
 const rotateArray = (arr, n) => {
-  // Write your code here
+  const len = arr.length
+  const steps = n % len
 
-  const newArr = [...arr.slice(n), ...arr.slice(0, n)]
-
-  return newArr
+  return [...arr.slice(steps), ...arr.slice(0, steps)]
 }
-
 console.log(rotateArray([1, 2, 3, 4, 5], 2)) // returns [3, 4, 5, 1, 2]
 console.log(rotateArray(['apple', 'banana', 'cherry', 'date'], 3))
 // ["date", "apple", "banana", "cherry"]
