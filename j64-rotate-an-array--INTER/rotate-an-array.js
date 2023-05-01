@@ -8,6 +8,10 @@
 
 const rotateArray = (arr, n) => {
   // Write your code here
+
+  const newArr = [...arr.slice(n), ...arr.slice(0, n)]
+
+  return newArr
 }
 
 console.log(rotateArray([1, 2, 3, 4, 5], 2)) // returns [3, 4, 5, 1, 2]
