@@ -12,6 +12,22 @@
 
 const get = (key, object) => {
   // Write your code here
+  if (typeof object !== 'object' || object === null) {
+    return undefined
+  }
+
+  if (key in object) {
+    return object[key]
+  }
+
+  for (const objKey in object) {
+    const value = get(key, object[objKey])
+    if (value !== undefined) {
+      return value
+    }
+  }
+
+  return undefined
 }
 
 const obj = {
