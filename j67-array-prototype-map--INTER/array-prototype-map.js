@@ -13,8 +13,18 @@
 
 Array.prototype.myMap = function (callback) {
   // Write your code here
+
+  let final = []
+
+  this.forEach((num) => {
+    const result = callback(num)
+
+    final.push(result)
+  })
+
+  return final
 }
 
-const arr = [1, 2, 3, 4]
-
-const callback = (num) => num * 2
+let numbers = [1, 2, 3, 4]
+let result = numbers.myMap((num) => num * 2)
+console.log(result)
