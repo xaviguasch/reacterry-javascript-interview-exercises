@@ -7,6 +7,28 @@
 
 const mostCommon = (arr) => {
   // Write your code here
+
+  const hashMap = {}
+
+  for (const item of arr) {
+    if (!hashMap[item]) {
+      hashMap[item] = 1
+    } else {
+      hashMap[item]++
+    }
+  }
+
+  let mostCommon = ''
+  let mSCount = 0
+
+  for (const key in hashMap) {
+    if (hashMap[key] > mSCount) {
+      mostCommon = key
+      mSCount = hashMap[key]
+    }
+  }
+
+  return mostCommon
 }
 
 const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']
