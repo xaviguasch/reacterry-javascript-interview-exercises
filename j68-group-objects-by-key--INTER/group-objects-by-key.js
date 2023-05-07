@@ -8,6 +8,17 @@
 
 const groupBy = (array, key) => {
   // Write your code here
+  const hashObj = {}
+
+  array.map((obj) => {
+    if (!hashObj[obj[key]]) {
+      hashObj[obj[key]] = [obj]
+    } else {
+      hashObj[obj[key]].push(obj)
+    }
+  })
+
+  return hashObj
 }
 
 const people = [
