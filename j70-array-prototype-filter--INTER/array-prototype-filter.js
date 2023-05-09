@@ -15,7 +15,31 @@
 
 Array.prototype.myFilter = function (callback) {
   // Write your code here
+
+  const finalArr = []
+
+  this.forEach((item) => {
+    if (callback(item)) {
+      finalArr.push(item)
+    }
+  })
+
+  return finalArr
 }
+
+// ALTERNATIVE SOLUTION
+
+// Array.prototype.myFilter = function(callback) {
+//   // Write your code here
+
+//     const filteredArray = [];
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) {
+//       filteredArray.push(this[i]);
+//     }
+//   }
+//   return filteredArray;
+// };
 
 const numbers = [1, 2, 3, 4, 5]
 const filteredNumbers = numbers.myFilter((num) => num > 3)
